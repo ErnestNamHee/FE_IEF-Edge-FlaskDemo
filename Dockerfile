@@ -5,8 +5,8 @@ LABEL maintainer="Ernest Nam Hee"
 
 RUN pip install flask
 
-COPY apps /apps/
+COPY Apps /apps/
 
 EXPOSE 81000
 
-ENTRYPOINT ["python", "/apps/FlaskDemo.py"]
+ENTRYPOINT ["python", "/apps/Demo.py"]
