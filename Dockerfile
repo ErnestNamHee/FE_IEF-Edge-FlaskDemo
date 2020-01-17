@@ -5,7 +5,7 @@ LABEL maintainer="Ernest Nam Hee"
 
 RUN pip install flask
 
-COPY Apps /apps/
+COPY ./Apps/ /apps/
 
 EXPOSE 8100
 ENTRYPOINT ["python", "/apps/app.py"]
