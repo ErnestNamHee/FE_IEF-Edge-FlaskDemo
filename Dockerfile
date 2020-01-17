@@ -7,6 +7,5 @@ RUN pip install flask
 
 COPY Apps /apps/
 
-EXPOSE 81000
-
+EXPOSE 8100
 ENTRYPOINT ["python", "/apps/Demo.py"]
