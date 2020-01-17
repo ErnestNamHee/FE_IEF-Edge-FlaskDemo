@@ -1,11 +1,10 @@
-# python:alpine is 3.{latest}
-FROM python:alpine 
+FROM python:3.7
+COPY . /app
 
-LABEL maintainer="Ernest Nam Hee"
+WORKDIR /app
 
-RUN pip install flask
+RUN pip install -r requirements.txt
 
-COPY ./Apps/ /apps/
+EXPOSE 5000
 
-EXPOSE 8100
-ENTRYPOINT ["python", "/apps/app.py"]
+CMD ["python3", "main.py"]
