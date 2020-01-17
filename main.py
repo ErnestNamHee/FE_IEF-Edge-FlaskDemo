@@ -1,12 +1,11 @@
 from flask import Flask
 
-app = Flask(__name__)  # 创建一个wsgi应用
+app = Flask(__name__)  
 
 
-@app.route('/')  # 添加路由：根
+@app.route('/')  
 def hello_world():
-    return 'Hello World!'  # 输出一个字符串
-
+    return 'IEF Edge Apps : Hello World !!!'  
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
